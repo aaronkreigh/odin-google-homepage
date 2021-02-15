@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <title>Google</title>
 </head>
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-    <form action="/search">
-        <input type="text">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
-    </form>
+    <main id=main-container>
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+        </div>
+        
+        <div id="search-form">
+            <form action="/search">
+                <div class="search-input">
+                    <input type="text">
+                </div>
+                <div class="search-buttons">
+                    <input type="submit" value="Google Search">
+                    <input type="submit" value="I'm Feeling Lucky">
+                </div>    
+            </form>
+        </div>
+    </main>
+    
+    
 </body>
 </html>

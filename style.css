@@ -1,5 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#nav {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding: 6px;
+}
+
+#nav a {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+#nav a:first-of-type {
+    margin-left: 15px;
+}
+
+#nav-right {
+    font-size: 13px;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-right-ctn {
+    display: inline-block;
+}
+
+#nav-right a {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.menu-icon {
+    width: 2rem;
+}
+
 #main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+

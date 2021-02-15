@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -11,26 +13,37 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 #nav {
     display: flex;
     height: 60px;
     align-items: center;
     padding: 6px;
+    box-sizing: border-box;
 }
 
-#nav a {
+.nav-left-link {
     padding: 5px;
     margin: 0 5px;
 }
 
-#nav a:first-of-type {
+.nav-left-link:first-of-type {
     margin-left: 15px;
 }
 
 #nav-right {
-    font-size: 13px;
     flex-grow: 1;
     text-align: right;
+    padding: 0 4px;
+}
+
+.nav-right-link {
+    font-size: 13px;
+    padding-left: 15px;;
+}
+
+.nav-right-link:last-of-type {
+    padding-right: 15px;
 }
 
 .nav-right-ctn {
@@ -41,8 +54,27 @@ a:hover {
     color: rgba(0, 0, 0, 0.87);
 }
 
+.nav-right-item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px;
+}
+
 .menu-icon {
-    width: 2rem;
+    width: 1.5rem;
+    fill: #5f6368;
+    padding: 8px;
+}
+
+.nav-right-avatar a {
+    display: inline-block;
+    padding: 4px;
+}
+
+.avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
 }
 
 #main-container {

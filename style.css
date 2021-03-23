@@ -2,6 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body, html {
+    height: 100%;
 }
 
 a {
@@ -16,6 +22,7 @@ a:hover {
 
 #nav {
     display: flex;
+    flex-grow: 0;
     height: 60px;
     align-items: center;
     padding: 6px;
@@ -80,6 +87,71 @@ a:hover {
 #main-container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
+}
+
+#search-form {
+    flex-shrink: 0;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.search-ctn {
+    width: auto;
+    max-width: 584px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+.search-input {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+#footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-grow: 0;
+}
+
+.footer-ctn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.footer-link {
+    color: #70757a;
+    display: inline-block;
+    padding: 15px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.leaf-icon {
+    height: 14px;
+    margin-right: 6px;
+}
+
+.footer-left {
+    min-width: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-right {
+    min-width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 

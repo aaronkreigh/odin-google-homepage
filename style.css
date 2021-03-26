@@ -116,6 +116,12 @@ a:hover {
     padding: 5px 8px 0 14px;
 }
 
+.search-input-ctn:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
 .search-input {
     background: transparent;
     border: none;
@@ -168,6 +174,13 @@ a:hover {
     text-align: center;
     cursor: pointer;
     user-select: none;
+}
+
+.search-button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
 }
 
 #footer {
